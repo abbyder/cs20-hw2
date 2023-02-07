@@ -1,0 +1,107 @@
+<!-- 
+    products.html : Contains the product info for the business
+    Abigail Der
+    CS20
+    Homework 2
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Products | Orange Blossom Farm Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        h1 {
+            font-weight: normal;
+            text-align: center;
+        }
+        .products {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 0px 90px 0px 90px;
+        }
+        .products section {
+            padding: 10px 30px 10px 30px;
+        }
+        .products p {
+            text-align: center;
+        }
+
+        /* RESPONSIVENESS */
+        @media (max-width: 1100px) {
+            .products { 
+                margin: 0px 40px 0px 40px;
+            }
+        }
+        @media (max-width: 800px) {
+            .products { 
+                margin: 0px 20px 0px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <!-- site header -->
+    <header class="site-header">
+        <a href="index.html"><img src="images/obf-logo.jpg" height=80px" 
+            alt="Orange Blossom Farm Co. Logo" /></a>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="products.html">Products</a></li>   
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr />
+
+    <h1>Products</h1>
+    <div class="products">
+        <section>
+            <img src="images/oranges-prod.jpg" alt="Oranges for sale" />
+            <p>Oranges <br /> $2/lb</p>
+        </section>
+
+        <section>
+            <img src="images/orange-juice.jpg" alt="Orange juice for sale" />
+            <p>Orange Juice <br /> 52 fl oz | $7</p>
+        </section>
+
+        <section>
+            <img src="images/marmalade.jpg" alt="Orange marmalade for sale" />
+            <p>Orange Marmalade <br /> 13 oz | $8</p>
+        </section>
+
+        <section>
+            <img src="images/candle.jpg" alt="Orange blossom candle for sale" />
+            <p>Orange Blossom Candle <br /> 6.5 oz | $18</p>
+        </section>
+
+        <section>
+            <img src="images/perfume.jpg" alt="Orange blossom perfume for sale" />
+            <p>Orange Blossom Perfume <br /> 3 oz | $45</p>
+        </section>
+
+    </div>
+
+
+    <!-- footer -->
+    <hr />
+    <footer class="site-footer">
+        <p>&copy;2023 Orange Blossom Farm Co. All rights reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

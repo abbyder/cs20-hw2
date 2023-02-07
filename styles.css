@@ -1,0 +1,211 @@
+/* 
+    styles.css : Contains style rules for the homepage and fixed elements
+    Abigail Der
+    CS20
+    Homework 2
+ */
+
+html,body {
+    font-size: 20px; 
+    color: black; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+/* ----------- SITE HEADER ----------- */
+.site-header {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+ }
+ /* header nav */
+ul.header-nav {
+    list-style-type: none;
+    text-align: center;
+    margin: 0px;
+}
+ul.header-nav li {              /* items in nav list*/
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 10px 10px 10px;
+}
+ul.header-nav li a {               /* links in nav list*/
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+ul.header-nav li a:hover {
+    color: #bc5b00;
+}
+
+/* ----------- HOME IMAGE HEADER ----------- */
+.image-header {
+    background-image: url("images/image-header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.image-header h1 {
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    width: 70%;
+    backdrop-filter: blur(3px);
+    padding: 20px;
+    border-radius: 50px;
+    font-weight: normal;
+}
+
+/* ----------- HOME INFO SECTION ----------- */
+.info-section {
+    display: flex;
+    margin: 30px;
+    margin-top: 40px;
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+}
+ #info-description {
+    width: 70%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ #info-description p {
+    width: 60%;
+    font-size: 25px;
+}
+#info-image {
+    width: 30%;     
+    justify-content: center;  
+}
+#info-image img {
+    border-radius: 100%
+}
+
+/* ----------- HOME ORDER SECTION ----------- */
+.order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-color: #faac5f;
+}
+.order-section h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 35px;
+}
+.order-section ol {
+    width: 50%;
+}
+.order-section li {
+    font-size: 22px;
+}
+ .order-section a {
+    text-decoration: none;
+    color: black;
+}
+.order-section a:hover {
+    color: white;
+}
+
+/* ----------- SITE FOOTER ----------- */
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-footer p {
+    font-size: 15px;
+}
+ul.footer-nav {
+    list-style-type: none;
+    text-align: center;
+}
+ul.footer-nav li {              /* items in nav list*/
+    display: inline-block;
+    font-size: 15px;
+    border-right: 1px solid black;
+}
+ul.footer-nav li:last-child {
+    border-right: none;
+}
+ul.footer-nav li a {               /* links in nav list*/
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+ul.footer-nav li a:hover {
+    color: #bc5b00;
+}
+
+/* ----------- RESPONSIVENESS ----------- */
+@media (max-width: 1250px) {
+    .info-section {
+        justify-content: space-evenly;
+        height: 450px;
+    }
+    #info-description {
+        width: 60%;
+    }
+    #info-description p {
+        width: 80%;
+    }
+    #info-image {
+        width: 40%;     
+    }
+}
+@media (max-width: 900px) {
+    .info-section {
+        flex-direction: column;
+        height: fit-content;
+    }
+    #info-description {
+        width: 100%;
+        padding-bottom: 50px;
+    }
+    #info-description p {
+        width: 80%;
+    }
+    #info-image {
+        width: 100%;
+        display: flex;
+    }
+
+    .order-section ol {
+        width: 80%;
+    }
+}
+@media (max-width: 700px) {
+    .site-footer {
+       flex-direction: column;
+    }
+    ul.footer-nav li a { 
+        padding: 0px 10px 0px 10px;
+    }
+}
+@media (max-width: 600px) {
+    .order-section {
+        height: 550px;
+    }
+    .order-section h2 {
+        font-size: 30px;
+    }
+    .order-section li {
+        font-size: 20px;
+    }
+    .site-header {
+        flex-direction: column;
+        height: min-content;
+     }
+}
+
+

@@ -1,0 +1,159 @@
+<!-- 
+    contact.html : Contains the contact info for the business
+    Abigail Der
+    CS20
+    Homework 2
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+    <title>Contact Us | Orange Blossom Farm Co.</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        .page {
+            background-image: url("images/contact-header.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+        h1 {
+            font-weight: normal;
+            text-align: center;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            align-content: center;
+            margin-left: 120px;
+            margin-right: 120px;
+        }
+        .contact-info {
+            margin-right: 30px;
+            padding: 20px 40px;
+            background-color: white;
+            border-radius: 30px;
+            height: 300px;
+        }
+        .contact-info a {
+            text-decoration: none;
+            color: black;
+        }
+        .contact-info a:hover {
+            color: #bc5b00;;
+        }
+        .contact-form {
+            margin-left: 30px;
+            padding: 10px 20px 30px 20px;
+            background-color: white;
+            border-radius: 30px;
+            width: 400px;
+            text-align: center;
+        }
+        .contact-form input {
+            width: 200px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+        }
+        .contact-form textarea {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+
+        /* RESPONSIVENESS */
+        @media (max-width: 900px) {
+            .contact-content {
+                flex-direction: column;
+                margin: 0px;
+                align-items: center;
+            }
+            .contact-info {
+                margin: 20px;
+                padding: 20px 40px;
+                height: fit-content;
+
+            }
+            .contact-form {
+                margin: 20px;
+                padding: 10px 20px 30px 20px;
+                height: fit-content;
+                width: 380px;
+            }
+        }      
+
+    </style>
+ 
+</head>
+ 
+<body>
+    <!-- site header -->
+    <header class="site-header">
+        <a href="index.html"><img src="images/obf-logo.jpg" height=80px" 
+           alt="Orange Blossom Farm Co. Logo" /></a>
+        <nav>
+            <ul class="header-nav">
+                <li><a href="products.html">Products</a></li>   
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="page">
+    <h1>Contact Us</h1>
+    <article class="contact-content">
+
+        <section class="contact-info">
+            <p>Email: <a href="mailto:order@orangeblossomfarm.com">order@orangeblossomfarm.com</a></p>
+            <p>Phone: <a href="tel:555-237-6259">555-237-6259</a></p>
+            <p>Hours of Operation<br />
+                <ul>
+                    <li>Monday-Friday: 9am-5pm</li>
+                    <li>Saturday-Sunday: 11am-5pm</li>
+                </ul>
+            </p>
+        </section>
+
+        <section class="contact-form">
+            <p>Let us know what you think!</p>
+            <form method="get" action="" id="feedback-form">
+                <!-- name -->
+                <label for="feedback-name">Name</label>&nbsp;
+                <input type="text" name="input-name" id="input-name" required>
+
+                <!-- email -->
+                <br /><br />
+                <label for="feedback-email">Email</label>&nbsp;
+                <input type="email" name="input-email" id="input-email" required>
+
+                <!-- feedback text -->
+                <br /><br />
+                <textarea name="feedback-msg" id="feedback-msg" cols="35" rows="5"
+                placeholder="What would you like to tell us?"></textarea>
+
+                <!-- submit button -->
+                <br /><br />
+                <input type="submit" value="Submit" />
+
+            </form>
+
+        </section>
+
+    </article>
+    </div>
+ 
+    <!-- footer -->
+    <footer class="site-footer">
+        <p>&copy;2023 Orange Blossom Farm Co. All rights reserved.</p>
+        <ul class="footer-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </footer>
+ 
+</body>
+ 
+</html>
