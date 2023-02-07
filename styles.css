@@ -42,7 +42,7 @@ ul.header-nav li a:hover {
 
 /* ----------- HOME IMAGE HEADER ----------- */
 .image-header {
-    background-image: url("image-header-bg.jpg");
+    background-image: url("images/image-header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
@@ -70,14 +70,14 @@ ul.header-nav li a:hover {
     align-items: center;
     justify-content: center;
 }
- #info-description {
+#info-description {
     width: 70%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
- #info-description p {
+#info-description p {
     width: 60%;
     font-size: 25px;
 }
@@ -188,24 +188,50 @@ ul.footer-nav li a:hover {
     .site-footer {
        flex-direction: column;
     }
-    ul.footer-nav li a { 
-        padding: 0px 10px 0px 10px;
+    ul.footer-nav {
+        padding: 0px;
     }
 }
 @media (max-width: 600px) {
     .order-section {
-        height: 550px;
+        height: fit-content;
     }
     .order-section h2 {
         font-size: 30px;
+        margin: 30px 10px 10px 10px;
     }
     .order-section li {
         font-size: 20px;
     }
+    ul.header-nav  {
+        padding-left: 0px;
+    }
     .site-header {
         flex-direction: column;
         height: min-content;
+        margin: 10px 0px 10px 0px;
+        
      }
 }
-
-
+@media (max-width:500px) {
+    .image-header h1 {
+        font-size: 35px;
+    }
+    #info-description p {
+        width: 80%;
+        font-size: 20px;
+    }
+    .order-section h2 {
+        font-size: 30px;
+    }
+    .order-section ol {
+        margin-bottom: 30px;
+    }
+    .order-section li {
+        font-size: 18px;
+    }
+    .site-footer p {
+        text-align: center;
+        margin: 10px;        
+    }
+}
