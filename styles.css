@@ -42,7 +42,7 @@ ul.header-nav li a:hover {
 
 /* ----------- HOME IMAGE HEADER ----------- */
 .image-header {
-    background-image: url("images/image-header-bg.jpg");
+    background-image: url("image-header-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 600px;
